@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NECOLE</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+  <link href="css/bootstrap-reboot.css" rel="stylesheet">
+  <link href="css/layout.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <p class="ttl_header"><a href="index.html">NECOLE</a></p>
+  </header>
+  <section id="main">
+    <div id="loader-bg" v-show="load">
+      <div id="loader">
+        <img src="image/neko.gif" width="100" height="100" alt="Loading">
+      </div>
+    </div>
+    <div class="box_result_inner">
+     <div class="box_result_dtl">
+        <h1 class="ttl_result">
+          <span id="hoi">{{ttl_main}}</span>
+          <span id="hhoi" class="ttl_result_sub">{{ttl_sub}}</span>
+        </h1>
+       <h2 class="ttl_dtl">あらすじ</h2>
+       <p id="moi" class="txt_result" v-if="!txt_result">あらすじがありません</p>
+       <p id="moi" class="txt_result" v-else>{{txt_result}}</p>
+     </div>
+     <div id="mui" class="img_result">
+       <img :src="img_result">
+       <p id="mus" class="point_result">
+         <span>score</span>{{vote_average}}
+       </p>
+      </div>
+    </div>
+    <div class="box_add"><img src="image/img_main.png" width="200" height="" alt="メインイメージ"></div>
+    <p id="lod" class="btn_read">ほかのおすすめ</p>
+  </section>
+  
+  <footer id='footer'>
+    <a href="https://www.themoviedb.org/" target="_blank"><img src="https://www.themoviedb.org/assets/1/v4/logos/408x161-powered-by-rectangle-blue-10d3d41d2a0af9ebcb85f7fb62ffb6671c15ae8ea9bc82a2c6941f223143409e.png" width="100" alt="Powerd By THE MOVIE DB"></a>
+    <p>This product uses the TMDb API but is not endorsed or certified by TMDb.</p>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
