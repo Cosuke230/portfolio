@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*defult set*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3%;
+  font-size: 1.6rem;
+  font-family: 'ヒラギノ角ゴシック', 'メイリオ' ,sans-serif;
+  line-height: 1.5;
+  letter-spacing: .25rem;
+}
+
+/*style*/
+h1, h2, h3 {
+  font-family: 'Fredoka One';
+  letter-spacing: .25rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 180%;
+}
+
+h2 {
+  padding: 1vh;
+  font-size: 160%;
+  border-bottom: 1px solid #F44336;
+}
+
+h3 {
+  font-family: 'M PLUS Rounded 1c';
+  font-size: 130%;
+}
+
+.updata {
+  font-size: 80%;
+  text-align: center;
+}
+
+#nav, #prof {
+  margin: 10% auto 0;
+}
+
+.lst_profile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0 auto;
+  font-size: 80%;
+}
+
+.lst_profile dt {
+  width: 25%;
+  margin: 1vh 0 0;
+}
+
+.lst_profile dd {
+  width: calc(100% - 25%);
+  margin: 1vh 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  ul.lst_work {
+    display: block;
+    width: 90%;
+    margin: 1vh auto 0;
+  }
+  ul.lst_work li {
+    display: block;
+    width: 100%;
+    margin: 1vh auto 0;
+  }
+  ul.lst_work li a {
+    display: block;
+    border: 1px solid #333;
+  }
+  ul.lst_work li .txt {
+    font-size: 90%;
+    margin: 1vh 0 0;
+  }
+  footer p {
+    margin: 1vh 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  ul.lst_work {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+  ul.lst_work li {
+    width: 30%;
+  }
+}
