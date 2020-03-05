@@ -16,8 +16,18 @@ body {
 
 header {
   position: relative;
-  background: url(../image/IMG_2627.jpg) no-repeat 0 0/cover;
-  height: 70vh;
+  background: url(../image/top.jpg) no-repeat center/cover;
+  height: 25em;
+}
+
+footer {
+  width: 100%;
+  margin: 10% 0 0;
+  padding: .5%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 70%;
 }
 
 /*style*/
@@ -33,16 +43,16 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  top: 20px;
+  top: 5%;
   bottom: 0;
-  height: 8vh;
+  height: 2em;
   margin: auto 0;
 }
 
 h1::after {
   content: "";
   display: block;
-  width: 5vw;
+  width: 20%;
   margin: auto;
   border-bottom: 3px solid #F44336;
 }
@@ -55,21 +65,21 @@ h2 {
 h2::after {
   content: "";
   display: block;
-  width: 5vw;
+  width: 20%;
   margin: auto;
   border-bottom: 3px solid #F44336;
 }
 
 h3 {
   font-family: 'M PLUS Rounded 1c';
-  font-size: 130%;
+  font-size: 110%;
 }
 
 .updata {
   margin: 0 0 0;
   text-align: center;
   position: absolute;
-  top: 58%;
+  top: 70%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -78,6 +88,11 @@ h3 {
 
 #nav, #prof {
   margin: 3vh auto 0;
+}
+
+.txt {
+  text-align: center;
+  font-size: 90%;
 }
 
 .lst_profile {
@@ -110,11 +125,11 @@ h3 {
 .lst_work img {
   height: auto;
   transition: ease .3s all;
-  filter: blur(10px) grayscale(100%) opacity(75%);
+  filter: blur(5px) opacity(75%);
 }
 
 .lst_work a:hover img {
-  filter: blur(0) grayscale(0%) opacity(100%);
+  filter: blur(0) opacity(100%);
 }
 
 .cat01 {
@@ -164,11 +179,10 @@ h3 {
   ul.lst_work li {
     display: block;
     width: 100%;
-    margin: 1vh auto 0;
+    margin: 4% auto 0;
   }
   ul.lst_work li .txt {
-    font-size: 90%;
-    margin: 1vh 0 0;
+    margin: 1% 0 0;
   }
   .lst_profile {
     display: block;
@@ -185,14 +199,11 @@ h3 {
   .lst_profile dd {
     width: 100%;
   }
-  footer p {
-    margin: 1vh 0 0;
-  }
 }
 
 @media screen and (min-width: 768px) {
   header {
-    background: url(../image/IMG_2627.jpg) no-repeat center/50%;
+    background: url(../image/top.jpg) no-repeat center 37%/100%;
   }
   ul.lst_work {
     display: flex;
@@ -204,6 +215,7 @@ h3 {
   }
   ul.lst_work li {
     width: 32%;
+    margin: 2% 0 0;
   }
   ul.lst_work li a {
     position: relative;

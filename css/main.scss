@@ -1,6 +1,7 @@
 /*defult set*/
 $prim-c: #F44336;
 $font-c : #fff;
+$ttl_aft: 20%;
 $sec-top: 3vh;
 $txt-top: 1vh;
 
@@ -18,8 +19,17 @@ body {
 }
 header {
   position: relative;
-  background: url(../image/IMG_2627.jpg) no-repeat 0 0/cover;
-  height: 70vh;
+  background: url(../image/top.jpg) no-repeat center/cover;
+  height: 25em;
+}
+footer {
+  width: 100%;
+  margin: 10% 0 0;
+  padding: .5%;
+  background: #000;
+  color: $font-c;
+  text-align: center;
+  font-size: 70%;
 }
 /*style*/
 h1,h2,h3 {
@@ -33,15 +43,15 @@ h1 {
   position: absolute;
   left: 0;
   right: 0;
-  top: 20px;
+  top: 5%;
   bottom: 0;
-  height: 8vh;
+  height: 2em;
   margin: auto 0;
 }
 h1::after {
   content: "";
   display: block;
-  width: 5vw;
+  width: $ttl_aft;
   margin: auto;
   border-bottom: 3px solid $prim-c;
 }
@@ -52,19 +62,19 @@ h2 {
 h2::after {
   content: "";
   display: block;
-  width: 5vw;
+  width: $ttl_aft;
   margin: auto;
   border-bottom: 3px solid $prim-c;
 }
 h3 {
   font-family: 'M PLUS Rounded 1c';
-  font-size: 130%;
+  font-size: 110%;
 }
 .updata {
   margin: 0 0 0;
   text-align: center;
   position: absolute;
-  top: 58%;
+  top: 70%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -72,6 +82,10 @@ h3 {
 }
 #nav,#prof {
   margin: $sec-top auto 0;
+}
+.txt {
+  text-align: center;
+  font-size: 90%;
 }
 .lst_profile {
   display: flex;
@@ -100,10 +114,10 @@ h3 {
   img{
     height: auto;
     transition: ease .3s all;
-    filter: blur(10px) grayscale(100%) opacity(75%);
+    filter: blur(5px) opacity(75%);
   }
   a:hover img{
-    filter: blur(0) grayscale(0%) opacity(100%);
+    filter: blur(0) opacity(100%);
   }
 }
 .cat01 {
@@ -140,6 +154,7 @@ h3 {
     max-width: 155%;
   }
 }
+
 @media screen and (max-width:480px) {
   ul.lst_work {
     display: block;
@@ -148,10 +163,9 @@ h3 {
     li {
       display: block;
       width: 100%;
-      margin: $txt-top auto 0;
+      margin: 4% auto 0;
       .txt {
-        font-size: 90%;
-        margin: $txt-top 0 0;
+        margin: 1% 0 0;
       }
     }
   }
@@ -170,15 +184,11 @@ h3 {
       width: 100%;
     }
   }
-
-  footer p{
-    margin: $txt-top 0 0;
-  }
   
 }
 @media screen and (min-width: 768px) {
   header {
-    background: url(../image/IMG_2627.jpg) no-repeat center/50%;
+    background: url(../image/top.jpg) no-repeat center 37%/100%;
   }
   ul.lst_work {
     display: flex;
@@ -189,6 +199,7 @@ h3 {
     margin: 0 auto;
     li {
       width: 32%;
+      margin: 2% 0 0;
       a {
         position: relative;
         display: block;
