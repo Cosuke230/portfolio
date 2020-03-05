@@ -61,9 +61,11 @@ footer {
     width: 100%;
     .inner {
       width: 100%;
+      order: 2;
     }
     figcaption {
       width: 100%;
+      order: 0;
     }
   }
 }

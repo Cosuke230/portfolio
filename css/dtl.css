@@ -63,8 +63,10 @@ footer {
   }
   figure .inner {
     width: 100%;
+    order: 2;
   }
   figure figcaption {
     width: 100%;
+    order: 0;
   }
 }
