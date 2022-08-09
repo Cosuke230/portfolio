@@ -4,102 +4,347 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|M+PLUS+Rounded+1c&display=swap&subset=japanese" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Ropa+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"
+    integrity="sha512-hy4ogK/McVqjtA/tuCa8SMmrk9gydD+Mlj3E7rAIj8EbSAuj1hOJxjG5tx6ShzUar16ccfESGj4nO3HiK6WIyQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <title>PORTFOLIO</title>
 </head>
 
 <body>
-  <section id="main">
-    <header>
-      <h1>PORTFOLIO.2020</h1>
-      <p class="updata"> updata.2020.03.01</p>
-    </header>
-    <main>
-      <section id="nav">
-        <h2>Works</h2>
-        <ul class="lst_work">
+  <header>
+    <h1><span>H</span><span>E</span><span>L</span><span>L</span><span>O!</span></h1>
+    <p class="txt">I'm Michiko Inagaki.Web Designer.</p>
+  </header>
+  <main>
+    <section id="about" class="box_about">
+      <h2>About</h2>
+      <div class="inner_img">
+        <figure><img src="image/top.jpg" width="" height="" alt=""></figure>
+      </div>
+      <p class="txt">1981年横須賀うまれの愛知県育ちです。<br>
+        セマンティックなコーディングを得意としますが、デザイン、イラスト作成も行います。<br>
+        UXデザインとLive2Dを現在勉強中。
+      </p>
+      <dl class="box_skil">
+        <dt>Skill</dt>
+        <dd>
+          <ul class="fb">
+            <li><img src="image/ico_html.png" width="" height="" alt="HTML"></li>
+            <li><img src="image/ico_css.png" width="" height="" alt="CSS"></li>
+            <li><img src="image/ico_sass.png" width="" height="" alt="SASS"></li>
+            <li><img src="image/ico_js.png" width="" height="" alt="Javascript"></li>
+            <li><img src="image/ico_jquery.png" width="" height="" alt="JQuery"></li>
+            <li><img src="image/ico_vue.png" width="" height="" alt="Vue"></li>
+            <li><img src="image/ico_wp.png" width="" height="" alt="Wordpress"></li>
+            <li><img src="image/ico_php.png" width="" height="" alt="PHP"></li>
+            <li><img src="image/ico_git.png" width="" height="" alt="Git"></li>
+            <li><img src="image/ico_xd.png" width="" height="" alt="AdobeXD"></li>
+            <li><img src="image/ico_ai.png" width="" height="" alt="Illustrator"></li>
+            <li><img src="image/ico_ps.png" width="" height="" alt="Photoshop"></li>
+          </ul>
+        </dd>
+      </dl>
+      <section class="routine">
+        <h3>Work Routine</h3>
+        <ul class="rout">
           <li>
-            <a href="dtl01.html">
-                  <span class="cat01">Design</span>
-                  <span class="num">01</span>
-                  <img src="image/thum_hm.png" width="400" height="219" alt="自社アプリ">
-                </a>
-            <h3>自社アプリLP</h3>
-            <p class="txt">自社提供アプリのLP。</p>
+            <p class="ttl">ヒアリング</p>
+            <p class="txt">クライアントが何をしたいか、どういう方に向けてWebサイトを製作したいか聞き取りを行います。</p>
           </li>
           <li>
-            <a href="dtl02.html">
-                  <span class="cat01">Direction</span>
-                  <span class="num">02</span>
-                  <img src="image/thum_castle.png" width="400" height="219" alt="自社WebサイトLP">
-                </a>
-            <h3>自社WebサービスLP</h3>
-            <p class="txt">自社提供WebサービスのLP。</p>
+            <p class="ttl">ペルソナ作成・<br>ユーザーインタビューなど</p>
+            <p class="txt">ヒアリングを基にデザインや施策の基準になるペルソナの作成やペルソナに基づいたユーザーからインタビューを行ったり、ユーザー調査を行います。</p>
+            <p class="lnk"><a href="image/persona.pdf" target="_blank">SAMPLE01</a></p>
+            <p class="lnk"><a href="image/map.pdf" target="_blank">SAMPLE02</a></p>
           </li>
           <li>
-            <a href="dtl03.html">
-                  <span class="cat01">Cording</span>
-                  <span class="num">03</span>
-                  <img src="image/thum_login.png" width="400" height="219" alt="お気に入り施設">
-                </a>
-            <h3>お気に入り施設</h3>
-            <p class="txt">jQueryでAjaxを使用したリスト。</p>
+            <p class="ttl">WF・モックアップ作成</p>
+            <p class="txt">ペルソナ・ユーザーインタビューからWFを作成します。クライアントによってはデザインに近い形まで作りこみます。</p>
+            <p class="lnk"><a href="image/sample01.jpg" class="js-modal">SAMPLE01</a></p>
+            <p class="lnk"><a href="image/sample02.jpg" class="js-modal">SAMPLE02</a></p>
           </li>
           <li>
-            <a href="dtl04.html">
-                  <span class="cat01">Graphic</span>
-                  <span class="num">04</span>
-                  <img src="image/thum_header.png" width="400" height="219" alt="見出し、アイコン">
-                </a>
-            <h3>MV・見出し</h3>
-            <p class="txt">コンテンツの見出しとアイコン。</p>
+            <p class="ttl">デザイン作成</p>
+            <p class="txt">WFを基にデザインを作成</p>
           </li>
           <li>
-            <a href="dtl05.html">
-                  <span class="cat01">Illustration</span>
-                  <span class="num">05</span>
-                  <img src="image/thum_illust.png" width="400" height="219" alt="イラスト・カット">
-                </a>
-            <h3>イラスト・カット</h3>
-            <p class="txt">様々なタッチでのカット作成。</p>
-          </li>
-          <li>
-            <a href="">
-                  <span class="cat01">Design/UI/UX</span>
-                  <span class="num">06</span>
-                  <img src="image/thum_neko.png" width="400" height="219" alt="映画紹介Webアプリ">
-                </a>
-            <h3>映画紹介Webアプリ</h3>
-            <p class="txt">映画レビューを表示するだけのサービス（準備中）</p>
+            <p class="ttl">コーディング</p>
+            <p class="txt">WPまたは静的でコーディングをおこないます。</p>
           </li>
         </ul>
       </section>
-      <section id="prof">
-        <h2>Profile</h2>
-        <figure class="box_thum">
-          <div class="img_thum"><img src="image/thum_me.png" alt="mself" width="400" height="400"></div>
-          <figcaption>
-            <dl class="lst_profile">
-              <dt>Name</dt>
-              <dd>M.Inagaki</dd>
-              <dt>Job</dt>
-              <dd>Web designer/Coder</dd>
-              <dt>Skill</dt>
-              <dd>HTML5/CSS3/jQuery/Javascript/<br>Git/Sass</dd>
-              <dt>App</dt>
-              <dd>Photoshop/Illustrator/AdobeXD</dd>
-              <dt>learn to...</dt>
-              <dd>PHP(Laravel)/UX・UI Design</dd>
-            </dl>
-          </figcaption>
-        </figure>
-      </section>
-    </main>
-  </section>
-  <footer>2020 M.Inagaki</footer>
+    </section>
+    <section id="portfolio" class="box_portfolio">
+      <h2>Portfolio</h2>
+      <p class="txt">直近の業務又はプライベートで作成したサイト</p>
+      <div class="fb">
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_suv.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>SUV販促LP</h3>
+              <p class="work">Direction/Design/Cording/Writing</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_xd.png" alt=""></li>
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">ディレクションからデザイン・ライティングまで行いました。様々な女性のシーンに合わせたSUVの展開を提案するLPです。女性の活躍を軸に車種を紹介する内容になっています。
+                ターゲットは40代女性になっています。今までにない切り口のＬＰだったため、好評をいただきました。
+              </p>
+              <a href="https://www.c-aichi.co.jp/file/special/34702/10347/suv_cp2020/index.html" class="link"
+                target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_cross.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>新型車発表LP</h3>
+              <p class="work">Direction/Design/Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_xd.png" alt=""></li>
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">
+                新型車発表LPです。SUVながらも高級感のある車種ですので、ターゲットを30代男性に定め、シックなカラーイメージとアクティブ感のある写真で高級感を残しつつ、親しみやすい内容に仕上げました
+                。</p>
+              <a href="https://www.c-aichi.co.jp/file/special/34702/13333/corollacross/index.html" class="link"
+                target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_newlife.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>新生活応援セールLP</h3>
+              <p class="work">Direction/Design/Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_xd.png" alt=""></li>
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">
+                4月から6月までの新生活応援セールキャンペーンのLPです。主にメインターゲットが20代の社会人だったため。季節と合わせてピンクや青などのビビッドな配色にしました。また、メインターゲットの年代の
+                先方の社員の方に好評をいただきました。</p>
+              <a href="https://www.c-aichi.co.jp/file/special/34702/15666/new_life/index.html" class="link"
+                target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_eco.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>エコカーセールLP</h3>
+              <p class="work">Direction/Design/Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_xd.png" alt=""></li>
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">4月から6月までのエコカーセールのキャンペーンLPです。新緑をイメージして、賑やかにしてほしいとの事だったので、
+                緑を基調に刺し色を黄色とイラストを合わせました。
+              </p>
+              <a href="image/img_sz_eco.jpg" class="link js-modal">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_sienta.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>車両販促LP</h3>
+              <p class="work">Direction/Design/Cording/Writing</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_xd.png" alt=""></li>
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">ディレクションからデザイン・ライティングまで行いました。アウトドアや様々なシーンに使われるファミリーカーなので、楽しそうな雰囲気を目指しました。</p>
+              <a href="image/lp_sienta.png" class="link js-modal">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_hoshino.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>書店企業サイト</h3>
+              <p class="work">Direction/Design/Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_xd.png" alt=""></li>
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+                <li><img src="image/ico_wp.png" alt=""></li>
+              </ul>
+              <p class="txt">主にディレクションとデザインを担当しました。WPに関しては構築は2人体制で行い、スケジュール管理とお客様が更新されるため、
+                わかりやすい入力フォームの設計と指示、マニュアル作成を行いました。
+              </p>
+              <a href="https://hoshinoshoten.jp/" class="link" target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_umemura.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>学校法人周年サイト</h3>
+              <p class="work">Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">メインのコーディングとアニメーションの設計・提案・作成を担当しました。</p>
+              <a href="https://www.c-aichi.co.jp/file/special/34702/10347/suv_cp2020/index.html" class="link"
+                target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_sports.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>学校法人スポーツ事業サイト</h3>
+              <p class="work">Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">メインのコーディングとアニメーションの設計・提案・作成を担当しました。</p>
+              <a href="https://www.chukyo-u.ac.jp/chukyo6sports/" class="link" target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_housing.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>住宅展示場Webアプリ</h3>
+              <p class="work">Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_vue.png" alt=""></li>
+              </ul>
+              <p class="txt">メインのコーディングとアニメーションの設計・提案・作成を担当しました。Vue部分での構築は2名で行いました。</p>
+              <a href="https://100ie-jiten.com/matching/" class="link" target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_ways.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>社外向けPRサイト</h3>
+              <p class="work">Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_wp.png" alt=""></li>
+              </ul>
+              <p class="txt">社外に向けたPRサイトの構築を行いました。最初は静的で進めていましたが、途中からお客様のほうで入力していくページも追加してほしいとのことだったので、
+                一部カテゴリにＷＰを追加しました。わかりやすい入力項目に気を付け、マニュアルの作成も行いました。
+              </p>
+              <a href="http://www.ways-asahi.jp/" class="link" target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_copro.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>企業求人サイト</h3>
+              <p class="work">Cording</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_jquery.png" alt=""></li>
+              </ul>
+              <p class="txt">エンジニア派遣求人サイトになります。コーディングとアニメーションの作成を行いました。</p>
+              <a href="https://www.copro-h.co.jp/copro_engineer/" class="link" target="_blank">Link</a>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="box_inner_port">
+          <figure>
+            <img src="image/thum_neko.jpg" width="" height="" alt="">
+            <figcaption>
+              <h3>映画紹介Webアプリ</h3>
+              <p class="work">Direction/Design/Cording/Illustration</p>
+              <ul class="lst_tool">
+                <li><img src="image/ico_html.png" alt=""></li>
+                <li><img src="image/ico_css.png" alt=""></li>
+                <li><img src="image/ico_vue.png" alt=""></li>
+              </ul>
+              <p class="txt">(準備中)ねこが気まぐれでオススメする映画紹介Webアプリ。
+                映画サイトのAPIを使用してあらすじ、評価、ポスター画像を表示します。</p>
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+    </section>
+    <section class="box_portfolio">
+      <h2>Illustration</h2>
+      <p class="txt">業務上で描いたカットからプライベートで描いたものまで</p>
+      <ul class="illust js-slick">
+        <li><img src="image/car.png" alt=""></li>
+        <li><img src="image/eatin.png" alt=""></li>
+        <li><img src="image/santa.png" alt=""></li>
+        <li><img src="image/people.png" alt=""></li>
+        <li><img src="image/people02.png" alt=""></li>
+        <li><img src="image/tako.png" alt=""></li>
+        <li><img src="image/majo.png" alt=""></li>
+        <li><img src="image/uma.jpg" alt=""></li>
+      </ul>
+    </section>
+  </main>
+  <footer>2022 M.Inagaki</footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+<script>
+  $(function () {
+    $('.js-modal').modaal({
+      type: 'image'
+    });
+    $('.js-slick').slick({
+      autoplay: true,
+      speed: 1000,
+      infinite: true,
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [{
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  });
+</script>
 
 </html>
