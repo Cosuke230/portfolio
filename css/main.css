@@ -7,8 +7,8 @@ html {
 body {
   position: relative;
   box-sizing: border-box;
-  width: max(1024px,80%);
   margin: 0 auto;
+  padding: 0 2vw;
   font-size: 1.6rem;
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
@@ -55,6 +55,7 @@ h3 {
 
 .read {
   padding: 0 2vw;
+  text-align: center;
 }
 
 header {
@@ -127,7 +128,7 @@ header figure img {
 h2 {
   margin-top: min(2.4rem,10vw);;
   padding: 10vw 0 0;
-  font-size: 12rem;
+  font-size: min(12rem,10vw);;
 }
 h2::first-letter {
   color: #F13E48;
@@ -142,7 +143,6 @@ h2::first-letter {
   justify-content: space-between;
   gap: 1vw;
   margin: 0 auto;
-  width: 80%;
 }
 .box_about .box_routine h3 {
   position: relative;
@@ -193,6 +193,7 @@ h2::first-letter {
 }
 .box_about .box_skill {
   grid-template-columns: 1fr 1fr;
+  margin-top: min(2.4rem,10vw);;
 }
 .box_about .box_skill .chart, .box_about .box_skill .skill {
   display: flex;
@@ -226,13 +227,7 @@ h2::first-letter {
 .box_about .box_skill .skill dt {
   font-size: 2rem;
 }
-.box_about .box_skill .skill dd {
-  width: 80%;
-}
 
-.box_portfolio .read {
-  text-align: center;
-}
 .box_portfolio .lst_portfolio {
   display: flex;
   align-items: center;
@@ -241,23 +236,23 @@ h2::first-letter {
   gap: 2vw 1vw;
   margin: 0 auto;
   margin-top: min(2.4rem,10vw);;
-  width: 80%;
+  width: 90%;
 }
 .box_portfolio .lst_portfolio li {
-  width: 16%;
+  width: 18%;
+  word-break: break-all;
 }
 .box_portfolio .lst_portfolio li a {
   text-align: center;
   color: #fff;
 }
-
-.box_illust .read {
-  text-align: center;
+.box_portfolio .lst_portfolio li figure {
+  padding: 1vw;
 }
+
 .box_illust figure {
   margin: 0 auto;
   margin-top: min(2.4rem,10vw);;
-  width: 80%;
 }
 
 .box_profile h2 {
@@ -288,7 +283,6 @@ h2::first-letter {
   margin-top: min(4rem,10vw);;
   grid-template-columns: 1fr 1fr;
   gap: 1vw;
-  width: 80%;
 }
 .box_profile .box_info + .sec figure {
   grid-row: 1;
@@ -297,7 +291,6 @@ h2::first-letter {
 .box_profile .box_info .ttl {
   display: flex;
   gap: 1vw;
-  width: 75%;
 }
 .box_profile .box_info .ttl p {
   width: 7.4rem;
@@ -326,4 +319,41 @@ h2::first-letter {
 }
 .box_profile .box_info .txt {
   margin-top: min(2.4rem,10vw);;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*modal
+.js_wrap{
+  opacity: 0;
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  &.active{
+    opacity: 1;
+    z-index: 10;
+  }
+  .modal_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(14, 30, 75, 0.5);
+  }
+  .modal_inner{
+    position: relative;
+    width: unquote('min(90vw,1000px)');
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: scroll;
+    .modal_cont{
+      img{
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}*//*# sourceMappingURL=main.css.map */
