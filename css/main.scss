@@ -54,6 +54,7 @@ h3 {
 .txt{
   font-size: 1.5rem;
   letter-spacing: .04em;
+  line-height: 1.5;
 }
 
 .read{
@@ -129,7 +130,7 @@ header{
   
 }
 
-h2{
+h2,h3{
   margin-top:unquote('min(2.4rem,10vw);');
   padding: 10vw 0 0;
   font-size: unquote('min(12rem,10vw);');
@@ -138,15 +139,22 @@ h2{
   }
 }
 
+h3{
+  padding: 4vw 0 0;
+  font-size: unquote('min(5rem,4vw);'); 
+  text-align: center;
+}
+
 .box_about {
   margin: 0 auto;
-  margin-top:unquote('min(2.4rem,10vw);');
   
   .box_routine{
-      display: flex;
-      justify-content: space-between;
-      gap: 1vw;
       margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 80%;
+      column-gap: 3vw;
+      row-gap: 2vw;
       h3{
         position: relative;
         padding: 0 .5vw;
@@ -170,7 +178,6 @@ h2{
         }
       }
       .inner{
-        width: calc(100% / 4);
         &:nth-child(2){
           h3{
             &::before{
@@ -248,18 +255,49 @@ h2{
 }
 
 .box_portfolio {
+  .box_recent{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1vw;
+    h3{
+      text-align: left;
+      font-size: unquote('min(3rem, 3vw)');
+    }
+    h4{
+      margin-top:unquote('min(2.4rem,10vw);');
+      font-size: unquote('min(2rem,3vw);'); 
+    }
+    .box_content {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+    .lst_recent{
+      display: flex;
+      gap: 3em;
+      margin-top:unquote('min(2.4rem,10vw);');
+      li{
+        width: 16%;
+        a{
+          color: #fff;
+          font-size: small;
+        }
+      }
+    }
+  }
   .lst_portfolio{
     display: flex;
     align-items: center;
     justify-content:space-around;
     flex-wrap: wrap;
-    gap: 2vw 1vw;
     margin: 0 auto;
     margin-top:unquote('min(2.4rem,10vw);');
-    width: 90%;
+    width: 70%;
     li{
-      width: 18%;
+      width: 22%;
       word-break: break-all;
+      font-size: min(1.25rem, 1vw);
+      letter-spacing: .06em;
       a{
         text-align: center;
         color: $font-c;
@@ -306,6 +344,7 @@ h2{
 
   .box_info {
     margin: 0 auto;
+    width: 80%;
     margin-top:unquote('min(4rem,10vw);');
     grid-template-columns: 1fr 1fr;
     gap: 1vw;
@@ -334,6 +373,8 @@ h2{
       h3{
         font-size: 3.2rem;
         color: $prim-c;
+        text-align: left;
+        padding: 0;
         span{
           display: block;
           font-size: 1.6rem;
@@ -385,6 +426,46 @@ h2{
   }
 }*/
 
-@media screen and (min-width: 900px) {
-  
+/*dtl*/
+.box_dtl{
+  grid-template-columns: 40% 55%;
+  row-gap: 1vw;
+  column-gap: 1vw;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: min(2.4rem, 10vw);
+  h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: min(5rem, 4vw);
+    font-weight: 800;
+    &::first-letter{
+      color: $prim-c;
+    }
+  }
+  .box_content{
+      h2{
+        margin: 0;
+        padding: 0;
+        font-size: unquote('min(3rem,2vw);');
+        text-align: left;
+      }
+      h3{
+        margin: 0;
+        padding: 0;
+        font-size: unquote('min(2rem,2vw);');
+        text-align: left;
+      }
+      .txt{
+        margin: 1.6rem auto 0;
+      }
+    }
+    .lst_recent{
+      margin: 1.6rem auto 0;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 1vw;
+      column-gap: 2vw;
+      font-size: 14px;
+      text-align: center;
+    }
 }
