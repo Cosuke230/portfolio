@@ -1,9 +1,8 @@
 // モーダル（ポップアップ）
 const modalBtn = document.querySelectorAll('.js-modal');
-const modalWindow = document.querySelectorAll('.js_wrap');
+const modalWindow = document.querySelectorAll('.js-wrap');
 const modalClose = document.querySelectorAll('.modal_close');
 const modalBG = document.querySelectorAll('.modal_bg');
-
 window.addEventListener('DOMContentLoaded', function () {
   for (let i = 0; i < modalBtn.length; i++) {
     modalBtn[i].addEventListener('click', function (e) {
