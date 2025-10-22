@@ -1,4 +1,4 @@
-/*defult set*/
+/*set*/
 $prim-c: #f13e48;
 $sec-c: #120687;
 $bg-c: #ffbf00;
@@ -95,6 +95,7 @@ header {
   position: relative;
 	margin: 0 auto;
   width: 80%;
+  max-width: 1000px;
 	.box_grid {
 		grid-template-columns: 1fr auto;
     @media screen and (max-width: 768px) {
